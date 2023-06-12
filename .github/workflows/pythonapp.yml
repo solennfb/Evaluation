@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: docker build -t ./apppy .
-      working-directory: ./home/runner/work/Evaluation/
+    - run: docker build -t apppy .
+      working-directory: /home/runner/work/Evaluation/
       
 
