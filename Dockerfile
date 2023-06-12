@@ -4,16 +4,19 @@
 FROM python:latest
 
 # On se place dans le dossier sur lequel on va travailler
-WORKDIR /solennfb/Evaluation_120623
-
-# On expose le port 8080
-EXPOSE 8080
+WORKDIR /usr/src/app
 
 # On copie les dependances sur le dossier courant
-COPY requirements.txt .
+COPY requirements.txt /usr/src/app/
 
 # On installe les dependences
 RUN pip install -r requirements.txt
+
+# On copie le code source sur le conteneur
+COPY . /usr/src/app
+
+# On expose le port 8080
+EXPOSE 8080
 
 # Commande à lancer dans le conteneur
 CMD [ "python", "./main.py" ]
