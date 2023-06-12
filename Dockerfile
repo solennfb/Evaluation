@@ -11,3 +11,4 @@ RUN pip install -r requirements.txt
 
 # Commande à lancer dans le conteneur
 CMD [ "python", "./main.py" ]
+
