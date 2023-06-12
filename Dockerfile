@@ -1,7 +1,7 @@
 #Dockerfile realisé par Solenn FAROUX--BRASSART dans le but de lancer l'application "Blur-Detection-Web-App" dans un conteneur
 
 #On prend la dernière version de Python
-FROM python:8.3
+FROM python:latest
 
 # On se place dans le dossier sur lequel on va travailler dans le conteneur
 WORKDIR ./src
