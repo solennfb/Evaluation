@@ -1,4 +1,4 @@
-#Dockerfile realisé par Solenn FAROUX--BRASSART dans le but de lancer l'application "Blur-Detection-Web-App" dans un conteneur
+# Dockerfile realisé par Solenn FAROUX--BRASSART dans le but de lancer l'application "Blur-Detection-Web-App" dans un conteneur
 
 #On prend la dernière version de Python
 FROM python:latest
