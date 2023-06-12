@@ -10,7 +10,7 @@ WORKDIR ./src
 COPY . ./src
 
 # On installe les dependences
-RUN pip install -r requirements.txt
+RUN pip install -r ./src/requirements.txt
 
 # On expose le port 8080
 EXPOSE 8080
