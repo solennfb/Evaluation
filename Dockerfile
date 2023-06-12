@@ -16,5 +16,5 @@ RUN pip install -r requirements.txt
 EXPOSE 8080
 
 # Commande à lancer dans le conteneur
-CMD [ "python", "./main.py" ]
+CMD [ "python", "main.py" ]
 
