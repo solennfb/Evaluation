@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: docker build /home/runner/work/Evaluation_120623/Evaluation_120623/Dockerfile
-      working-directory: /home/runner/work/Evaluation_120623/Evaluation_120623/Dockerfile
+      working-directory: /home/runner/work/Evaluation_120623/Evaluation_120623/
