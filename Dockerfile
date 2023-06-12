@@ -4,16 +4,16 @@
 FROM python:latest
 
 # On se place dans le dossier sur lequel on va travailler
-WORKDIR /usr/src/app
+WORKDIR ./src
 
 # On copie les dependances sur le dossier courant
-COPY requirements.txt /usr/src/app/
+COPY requirements.txt ./src
 
 # On installe les dependences
 RUN pip install -r requirements.txt
 
 # On copie le code source sur le conteneur
-COPY . /usr/src/app
+COPY . /src
 
 # On expose le port 8080
 EXPOSE 8080
