@@ -1,4 +1,5 @@
-# Fichier yaml qui permet de mettre en place le workflow de l'application python Blur-Detection. 
+# Fichier yaml realisé par Solenn FAROUX--BRASSART (B3 ASBD)
+# Il permet de mettre en place le workflow de l'application python Blur-Detection. 
 # Le but de ce workflow est de lancer contruire une image Docker dans une machine afin de tester le Dockerfile
 
 #Nom du workflow
