@@ -1,4 +1,4 @@
-# Dockerfile realisé par Solenn FAROUX--BRASSART dans le but de lancer l'application "Blur-Detection-Web-App" dans un conteneur
+# Dockerfile realisé par Solenn FAROUX--BRASSART (B3 ASBD) dans le but de lancer l'application "Blur-Detection-Web-App" dans un conteneur
 
 #On prend la version de Python 3.8
 FROM python:3.8
