@@ -19,9 +19,9 @@ jobs:
     steps:
 #Verification du code
     - name: Checkout code
-    - uses: actions/checkout@v3
+      uses: actions/checkout@v3
  #On construit l'image docker "apppy" grâce au Dockerfile   
     - name: Build image Docker
-    - run: docker build -t apppy .
+      run: docker build -t apppy .
       working-directory: .
   
