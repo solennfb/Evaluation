@@ -1,15 +1,26 @@
+# Fichier yaml qui permet de mettre en place le workflow de l'application python Blur-Detection. 
+# Le but de ce workflow est de lancer contruire une image Docker dans une machine afin de tester le Dockerfile
+
+#Nom du workflow
 name: pythonapp
 
+#On déclenche le workflow sur la branche main
 on:
   push:
     branches: [ "main" ]
 
+#On a un job et celui ci va s'executer sur la dernière version d'ubuntu
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
+#Liste des étapes du job 
     steps:
+#Verification du code
+    - name: Checkout code
     - uses: actions/checkout@v3
+ #On construit l'image docker "apppy" grâce au Dockerfile   
+    - name: Build image Docker
     - run: docker build -t apppy .
       working-directory: .
   
